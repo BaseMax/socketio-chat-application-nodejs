@@ -29,3 +29,8 @@ io.on('connection', function(socket) {
     io.sockets.emit('message', data)
   })
 })
+
+// listen port
+http.listen(3003, function() {
+  console.log('listening on localhost:3003')
+})
