@@ -11,6 +11,7 @@ WebSocket **Chat** asynchronous communication application for online live concer
 - Allow-Origin headers
 - HTTP and HTTPS (WS and WSS socket)
 - Self-signed certificate
+- Support UTF-8 (Arabic, Persian, etc)
 - Some options (reconnection attempt, timeout, reject)
 
 ### Install dependencies
