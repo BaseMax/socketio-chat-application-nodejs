@@ -2,6 +2,8 @@
 
 WebSocket **Chat** asynchronous communication application for online live concert. (Nodejs)
 
+![Socket.IO Chat Application Nodejs](demo.png)
+
 ## Features
 
 - Live Websocket (socketio)
