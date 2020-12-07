@@ -21,11 +21,10 @@ function setUsername(value) {
   socket.emit('set-username', value);
 }
 
-function sendMessage() {
-  var message = document.getElementById('message');
-  if(message) {
-    socket.emit('message', {message: message.value, user: user});
-    message.value = '';
+function sendMessage(message, field) {
+  if(message && field) {
+    socket.emit('message', {message: message, user: user});
+    field.value = '';
   }
 }
 
@@ -36,7 +35,7 @@ socket.on('user-exists', function(data) {
 socket.on('user-set', function(data) {
   user = data.username;
   document.body.innerHTML = '<input type="text" id="message">\
-  <button type="button" name="button" onclick="sendMessage()">Send</button>\
+  <button type="button" name="button" onclick="sendMessage(document.getElementById(\'message\').value, document.getElementById(\'message\'))">Send</button>\
   <div id="message-container"></div>';
 });
 
