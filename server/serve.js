@@ -6,9 +6,6 @@
 */
 
 // import libs
-// var app = require('express')()
-// var http = require('http').Server(app)
-// var io = require('socket.io')(http)
 const fs          = require("fs")
 const ioServer    = require("socket.io")
 const http        = require("http")
@@ -16,15 +13,15 @@ const https       = require("https")
 
 // headers
 const CORS = (req, res) => {
-    res.setHeader("Access-Control-Allow-Origin", "*")
-    res.setHeader("Access-Control-Allow-Credentials", "true")
-    res.setHeader("Access-Control-Allow-Methods", "*")
-    res.setHeader("Access-Control-Allow-Headers", "*")
-    if(req.method === "OPTIONS" ) {
-        res.writeHead(200)
-        res.end()
-        return
-    }
+  res.setHeader("Access-Control-Allow-Origin", "*")
+  res.setHeader("Access-Control-Allow-Credentials", "true")
+  res.setHeader("Access-Control-Allow-Methods", "*")
+  res.setHeader("Access-Control-Allow-Headers", "*")
+  if(req.method === "OPTIONS" ) {
+    res.writeHead(200)
+    res.end()
+    return
+  }
 }
 
 // http webserver
@@ -46,10 +43,10 @@ const io = ioServer()
 
 // listen port(s)
 httpServer.listen(httpPort, function() {
-    console.log(`Listening HTTP on ${httpPort}`)
+  console.log(`Listening HTTP on ${httpPort}`)
 })
 httpsServer.listen(httpsPort, function() {
-    console.log(`Listening HTTPS on ${httpsPort}`)
+  console.log(`Listening HTTPS on ${httpsPort}`)
 })
 
 // attach socket to webserver(s)
