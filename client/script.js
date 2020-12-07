@@ -1,10 +1,20 @@
 var user;
-var socket = io("localhost:3003/", {
+var url    = "//localhost:9999";
+
+var socket = io(url, {
   "force new connection": true,
   "reconnectionAttempts": "Infinity", 
   "timeout": 10001, 
   "transports": ["websocket"]
+  // false = self-signed certificate
+  "rejectUnauthorized": true
 });
+// var socket = io("localhost:9999/", {
+//   "force new connection": true,
+//   "reconnectionAttempts": "Infinity", 
+//   "timeout": 10001, 
+//   "transports": ["websocket"]
+// });
 // var socket = io("http://localhost:3003/");
 
 function setUsername() {
