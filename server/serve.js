@@ -6,9 +6,6 @@
 */
 
 // import libs
-// var app = require('express')()
-// var http = require('http').Server(app)
-// var io = require('socket.io')(http)
 const fs          = require("fs");
 const ioServer    = require("socket.io");
 const http        = require("http")
