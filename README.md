@@ -1,10 +1,24 @@
 # Socket.IO Chat Application Nodejs
 
-  504  npm install express
-  505  yarn add ssocket.io
-  506  yarn add socket.io
-  507  ls
-  508  node serve.js 
+### Install dependencies
+
+```
+npm install express
+npm install socket.io
+```
+
+You can also install dependencies with the help of Yarn:
+
+```
+yarn add express
+yarn add socket.io
+```
+
+### Start and serve server socket
+
+```
+node serve.js 
+```
 
 ---------
 
