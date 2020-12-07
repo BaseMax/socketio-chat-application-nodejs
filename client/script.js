@@ -1,5 +1,5 @@
 var user;
-var url    = "//localhost:9999";
+var url    = "//localhost:9099";
 
 var socket = io(url, {
   "force new connection": true,
@@ -7,7 +7,7 @@ var socket = io(url, {
   "timeout": 10001, 
   "transports": ["websocket"]
   // false = self-signed certificate
-  "rejectUnauthorized": true
+  "rejectUnauthorized": false
 });
 // var socket = io("localhost:9999/", {
 //   "force new connection": true,
