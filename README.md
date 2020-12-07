@@ -1,5 +1,14 @@
 # Socket.IO Chat Application Nodejs
 
+## Features
+
+- Live Websocket (socketio)
+- Asynchronous communication (nodejs)
+- Allow-Origin headers
+- HTTP and HTTPS (WS and WSS socket)
+- Self-signed certificate
+- Some options (reconnection attempt, timeout, reject)
+
 ### Install dependencies
 
 ```
