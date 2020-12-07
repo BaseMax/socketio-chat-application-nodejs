@@ -30,6 +30,11 @@ io.on('connection', function(socket) {
   })
 })
 
+// serve client page in home of server port
+// app.get('/', function(req, res) {
+//   res.sendfile('index.html')
+// })
+
 // listen port
 http.listen(3003, function() {
   console.log('listening on localhost:3003')
