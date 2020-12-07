@@ -12,14 +12,18 @@
 ### Install dependencies
 
 ```
-npm install express
+npm install fs
+npm install http
+npm install https
 npm install socket.io
 ```
 
 You can also install dependencies with the help of Yarn:
 
 ```
-yarn add express
+yarn add fs
+yarn add http
+yarn add https
 yarn add socket.io
 ```
 
