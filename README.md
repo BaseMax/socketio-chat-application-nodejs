@@ -16,7 +16,18 @@ yarn add socket.io
 
 ### Start and serve server socket
 
+Move client files into Web-Server root directory:
+
 ```
+cd client/
+mv index.html /usr/share/nginx/html/
+mv script.html /usr/share/nginx/html/
+```
+
+Start server-side socket:
+
+```
+cd server/
 node serve.js 
 ```
 
