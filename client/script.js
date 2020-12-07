@@ -17,8 +17,8 @@ var socket = io(url, {
 // });
 // var socket = io("http://localhost:3003/");
 
-function setUsername() {
-  socket.emit('set-username', document.getElementById('name').value);
+function setUsername(value) {
+  socket.emit('set-username', value);
 }
 
 function sendMessage() {
