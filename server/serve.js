@@ -35,6 +35,13 @@ io.on('connection', function(socket) {
 //   res.sendfile('index.html')
 // })
 
+// allow x-requests
+app.all('/', function (request, response, next) {
+  response.header("Access-Control-Allow-Origin", "*")
+  response.header("Access-Control-Allow-Headers", "X-Requested-With")
+  next()
+})
+
 // listen port
 http.listen(3003, function() {
   console.log('listening on localhost:3003')
