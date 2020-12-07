@@ -16,6 +16,13 @@ WebSocket **Chat** asynchronous communication application for online live concer
 
 ### Install dependencies
 
+Easily install all:
+```
+yarn install
+```
+
+or manualy:
+
 ```
 npm install fs
 npm install http
