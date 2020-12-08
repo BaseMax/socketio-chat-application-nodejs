@@ -1,7 +1,7 @@
 {
   "name": "socketio-chat-application-nodejs",
   "version": "1.0.0",
-  "main": "server/serve.js",
+  "main": "serve.js",
   "repository": "https://github.com/BaseMax/socketio-chat-application-nodejs",
   "author": "Max Base",
   "license": "MIT",
