@@ -1,11 +1,11 @@
 var user;
-var url    = "//localhost:9099";
+var url    = "wss://localhost:9099";
 
 var socket = io(url, {
   "force new connection": true,
   "reconnectionAttempts": "Infinity", 
   "timeout": 10001, 
-  "transports": ["websocket"]
+  "transports": ["websocket"],
   // false = self-signed certificate
   "rejectUnauthorized": false
 });
